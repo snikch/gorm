@@ -55,6 +55,9 @@ func toSnake(u string) string {
 	return s
 }
 
+func SnakeToUpperCamel(s string) string {
+	return snakeToUpperCamel(s)
+}
 func snakeToUpperCamel(s string) string {
 	if v := umap.Get(s); v != "" {
 		return v
